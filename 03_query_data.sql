@@ -1,5 +1,5 @@
 --Yovana Isabel Palencia Sánchez 174197
---Clientes y sus órdenes
+-- Clientes y sus órdenes
 SELECT
     c.name AS customer_name,
     o.id AS order_id,
@@ -8,7 +8,7 @@ FROM customers c
 JOIN orders o ON c.id = o.customer_id
 ORDER BY c.name, o.order_date;
 
---Órdenes y sus productos
+-- Órdenes y sus productos
 SELECT
     o.id AS order_id,
     p.name AS product_name,
@@ -20,7 +20,7 @@ JOIN order_items oi ON o.id = oi.order_id
 JOIN products p ON oi.product_id = p.id
 ORDER BY o.id;
 
---Total gastado por cliente
+-- Total gastado por cliente
 SELECT
     c.name AS customer_name,
     SUM(oi.quantity * p.price) AS total_spent
