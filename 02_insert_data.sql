@@ -1,5 +1,5 @@
 --Yovana Isabel Palencia Sánchez 174197
--- 3. Insertar datos
+-- 4. Insertar datos de prueba
 INSERT INTO customers (name, email, city, signup_date) VALUES
 ('Juan Pérez', 'juan.perez@email.com', 'Madrid', '2024-01-15'),
 ('María García', 'maria.garcia@email.com', 'Barcelona', '2024-02-20'),
@@ -22,7 +22,3 @@ INSERT INTO order_items (order_id, product_id, quantity) VALUES
 (3, 4, 3),
 (4, 1, 1),
 (4, 2, 1);
-
--- Restaurar configuración
-SET enable_hashjoin = on;
-SET enable_mergejoin = on;
