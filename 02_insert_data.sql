@@ -26,6 +26,10 @@ INSERT INTO order_items (order_id, product_id, quantity) VALUES
 (4, 2, 1),
 (4, 3, 1);
 
+-- Insert previo para probar UNIQUE en email
+INSERT INTO customers (name, email, city, signup_date) VALUES
+('Test', 'duplicate@example.com', 'TestCity', '2025-06-01');
+
 -- Datos para probar restricción UNIQUE
 -- Este insert es válido
 INSERT INTO customers (name, email, city, signup_date) VALUES
